@@ -1,0 +1,86 @@
+.swiper-container {
+  position: relative;
+}
+.custom-swiper-pagination {
+  display: flex;
+  flex-direction: column; 
+  margin-right: 275px; 
+  position: absolute;
+  top: 75px;
+  right: 5px;
+  z-index: 10;
+}
+.custom-swiper-pagination-bullet:nth-child(1) {
+  background-color: #019DB5;
+  position: relative;
+}
+
+.custom-swiper-pagination-bullet:nth-child(2) {
+  background-color: #3F4C69;
+}
+
+.custom-swiper-pagination-bullet:nth-child(3) {
+  background-color: #E24229;
+}
+
+.custom-swiper-pagination-bullet:nth-child(4) {
+  background-color: #505356;
+}
+
+.custom-swiper-pagination-bullet {
+  height: 1rem;
+  border-radius: 100%;
+  width: 1rem;
+  margin-top: 0.25rem; 
+  margin-bottom: 0.25rem;
+  display: block; 
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.custom-swiper-pagination-bullet-active {
+  height: 1rem;
+  border-radius: 100%;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  display: block; 
+  background-color: #f48021;
+  width: 1rem;
+  pointer-events: none;
+  scale: 1.2;
+  outline: thick solid white;
+  transition: all 0.1s linear;
+}
+
+.custom-swiper-pagination-bullet {
+  margin-bottom: 25px;
+  position: relative;
+  width: 19px;
+  height: 19px;
+  border: 0.5px solid white;
+}
+.custom-swiper-pagination-bullet:not(:nth-child(4)):after {
+  content: '.....';
+  display: inline-block;
+  rotate: -90deg;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  letter-spacing: 1px;
+}
+.theme-switch {
+  position: fixed;
+  top: 16px; 
+  right: 16px; 
+  z-index: 1000;
+  background: white; 
+  padding: 8px; 
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.header {
+  position: relative;
+  z-index: 2000;
+}
+
+
